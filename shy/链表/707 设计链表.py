@@ -14,6 +14,7 @@ class MyLinkedList:
             return -1
         cur = self.head
 
+        # 通过for循环，访问到index前一个node
         for _ in range(index + 1):
             cur = cur.next
 
@@ -51,9 +52,6 @@ class MyLinkedList:
             pred = pred.next
         # 跳过要删除的node创建指向
         pred.next = pred.next.next
-
-
-
 
 
 
