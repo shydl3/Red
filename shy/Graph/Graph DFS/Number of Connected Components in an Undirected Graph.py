@@ -1,5 +1,7 @@
+from collections import defaultdict
+
 class Solution:
-    def countComponents(self, n: int, edges: List[List[int]]) -> int:
+    def countComponents(self, n: int, edges: list[list[int]]) -> int:
         graph = defaultdict(list)
         for x, y in edges:
             graph[x].append(y)
