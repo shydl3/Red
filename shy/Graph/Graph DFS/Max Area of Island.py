@@ -14,3 +14,4 @@ class Solution(object):
                 1 + area(x+1, y) + area(x-1, y) + area(x, y-1) + area(x, y+1)
             )
         return max(area(x, y) for x in range(len(grid)) for y in range(len(grid[0])))
+
